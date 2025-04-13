@@ -10,4 +10,15 @@ class WelcomeController extends Controller
     {
         return view('welcome');
     }
+
+    public function showForm()
+    {
+        return view('form');
+    }
+
+    public function handleForm(Request $request)
+    {
+        $name = $request->input('name');
+        return view('hello', ['name' => $name]);
+    }
 }
