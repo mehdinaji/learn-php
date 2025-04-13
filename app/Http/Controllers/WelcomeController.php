@@ -8,6 +8,6 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        return "Hello, welcome to my Laravel app!";
+        return view('welcome');
     }
 }
