@@ -13,4 +13,11 @@ class TodoController extends Controller
 
         return view('todos.index', compact('todos'));
     }
+    public function show($id)
+    {
+        $response = Http::get("https://jsonplaceholder.typicode.com/todos/{$id}");
+        $todo = $response->json();
+
+        return view('todos.single', compact('todo'));
+    }
 }

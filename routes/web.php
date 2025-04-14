@@ -15,3 +15,4 @@ Route::post('/form', [WelcomeController::class, 'handleForm']);
 
 use App\Http\Controllers\TodoController;
 Route::get('/todos', [TodoController::class, 'showList']);
+Route::get('/todos/{id}', [TodoController::class, 'show']);
