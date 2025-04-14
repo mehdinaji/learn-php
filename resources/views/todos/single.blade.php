@@ -8,4 +8,4 @@
 
 <a href="{{ url('/todos') }}">← Back to List</a>
 
-@dump($todo)
+<!-- @dump($todo) -->
